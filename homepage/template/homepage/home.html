@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ info.name }}</h1>
+        <p>{{ info.bio }}</p>
+        <p>Email: {{ info.email }}</p>
+        <p>Phone: {{info.phone}}</p>
+        <img src="{% static 'homepage/myimage.jpg'%}" alt="My Image">
+    </div>
+</body>
+</html>
