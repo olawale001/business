@@ -3,15 +3,13 @@
 <!DOCTYPE html>
 <head>
     <title>My Page</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="container">
-        <h1>{{ info.name }}</h1>
-        <p>{{ info.bio }}</p>
-        <p>Email: {{ info.email }}</p>
-        <p>Phone: {{info.phone}}</p>
-        <img src="{% static 'homepage/myimage.jpg'%}" alt="My Image">
+        <h1>{{ name }}</h1>
+        <p>{{ bio }}</p>
+        <p>Contact: {{ contact }}</p>
     </div>
 </body>
 </html>
